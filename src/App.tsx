@@ -72,7 +72,7 @@ export default function App(){
 
   return (
     <div className="container">
-      <h1 style={{marginBottom:8}}>One‑Click Token Creator</h1>
+      <h1 style={{marginBottom:8,fontSize:40}}>One‑Click Token Creator</h1>
       <p className="small">Create a token on <b>Solana</b>. Connect Phantom/Backpack or MetaMask, fill in details, and click Create. On mainnet, fees apply.</p>
 
       <div className="card" style={{marginTop:16}}>
@@ -158,7 +158,7 @@ export default function App(){
         <ul>
           <li>Devnet recommended for testing. On mainnet you pay real fees.</li>
           <li>Renouncing mint authority is enabled by default for SPL. Remove that call if you want a mintable token.</li>
-          <li>For ERC‑20, the contract is standard OpenZeppelin (below). Verify source on Etherscan after deploy.</li>
+          
         </ul>
       </div>
     </div>

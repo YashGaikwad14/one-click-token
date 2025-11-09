@@ -18,7 +18,7 @@ export const ConnectButtons: React.FC = () => {
       <div className="row">
         <div>
           <label>Wallet</label>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 8 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 8 ,width:880}}>
             <button onClick={connectSol}>Connect Phantom/Backpack</button>
           </div>
         </div>
