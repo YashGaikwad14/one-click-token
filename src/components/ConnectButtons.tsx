@@ -10,6 +10,7 @@ export const ConnectButtons: React.FC = () => {
   // Force a visible connect prompt
   const res = await provider.connect({ onlyIfTrusted: false })
   setSolAddress(res.publicKey.toString())
+  
 }
 
 
@@ -18,8 +19,8 @@ export const ConnectButtons: React.FC = () => {
       <div className="row">
         <div>
           <label>Wallet</label>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 8 ,width:880}}>
-            <button onClick={connectSol}>Connect Phantom/Backpack</button>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 8, width: 880 }}>
+            <button onClick={connectSol} style={{ cursor: 'pointer' }}>Connect Phantom/Backpack</button>
           </div>
         </div>
       </div>
